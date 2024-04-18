@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <body background="C:\Users\Admin\Documents\Career\The Groovy Library\Sample\Landing Page\images\pexels_photo_by_clem_onojeghuo.png">
+    </body>
+    <body>
+      <div class="top-panel"></div>
+      <img class="logo" src="C:\Users\Admin\Documents\Career\The Groovy Library\Sample\Landing Page\images\groovy_library__1__removebg_preview__1__1.png" alt="Logo">
+      <div  class="module Home"><a href="home.html">Home</a></div>
+      <div  class="module Story"><a href="story.html">Story</a></div>
+      <div  class="module Books"><a href="books.html">Books</a></div>
+      <div  class="module Donate"><a href="donate.html">Donate</a></div>
+      <div  class="module Connect"><a href="connect.html">Connect</a></div>
+      <div  class="module Login"><a href="Sign Up.html">Login</a></div>
+      <img class="icon" src="C:\Users\Admin\Documents\Career\The Groovy Library\Sample\Landing Page\images\user_1077114.png" alt="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+
+.top-panel {
+	box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.085);
+    width: 100%;
+    height: 118px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.logo {
+    position: fixed;
+    top:3px;
+    left: 40px;
+    z-index: 2;
+    width: 90px;
+    height: auto;
+}
+.Home {
+	position:fixed;
+	left:767px;
+	top:40px;
+	font-family:Javanese Text;
+	text-align:left;
+    z-index: 1;
+    padding: 0 10px;
+}
+.Story { 
+	position:fixed;
+	left:905px;
+	top:40px;
+	font-family:Javanese Text;
+	text-align:left;
+    z-index: 2;
+    padding: 0 10px;
+}
+.Books { 
+	position:fixed;
+	left:1003px;
+	top:40px;
+	font-family:Javanese Text;
+	text-align:left;
+    z-index: 3;
+    padding: 0 10px;
+}
+.Donate { 
+	position:fixed;
+	left:1100px;
+	top:40px;
+	font-family:Javanese Text;
+	text-align:left;
+    z-index: 4;
+    padding: 0 10px;
+}
+.Connect { 
+	position:fixed;
+	left:1200px;
+	top:40px;
+	font-family:Javanese Text;
+	text-align:left;
+    z-index: 5;
+    padding: 0 10px;
+}
+.Login { 
+	position:fixed;
+	left:1420px;
+	top:40px;
+	font-family:Javanese Text;
+	text-align:left;
+    z-index: 6;
+    padding: 0 10px;
+}
+.module a {
+    position: fixed;
+    color: black;
+    text-decoration: none;
+    font-size: 23px;
+}
+.Home a {
+    color: rgb(255, 116, 157);
+}
+.Login a {
+    color: rgb(8, 227, 201);
+}
+.module a:hover {
+    color: rgb(8, 227, 201);
+}
+.icon { 
+	width:23px;
+	height:auto;
+	position:fixed;
+	left:1400px;
+	top:50px;
+    z-index: 7;
+}
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f6f6f6;
+            color: #333;
+        }
+        .container {
+            width: 1000px;
+            margin: 150px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bolder;
+            font-style: italic;
+            font-size: 50px;
+            color: #960057;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="checkbox"] {
+            margin-top: 10px;
+        }
+        input[type="submit"] {
+            background-color: #ff2378;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        input[type="submit"]:hover {
+            background-color: #9c043e;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Donate Books</h1>
+    <form id="donateForm" action="send_email.php" method="post">
+    <label for="bookTitle">Book Title:</label>
+        <input type="text" id="bookTitle" name="bookTitle" required>
+
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" required>
+
+        <label for="genre">Genre:</label>
+        <input type="text" id="genre" name="genre">
+
+        <label for="condition">Condition:</label>
+        <textarea id="condition" name="condition" rows="4" required></textarea>
+
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <input type="checkbox" id="receiveMessage" name="receiveMessage">
+        <label for="receiveMessage">Receive a message back?</label>
+
+        <input type="submit" value="Donate Book">
+    </form>
+</div>
+
+
+<script>
+    document.getElementById("donateForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+        
+        // Get form data
+        var formData = new FormData(this);
+        
+        // Convert form data to JSON
+        var jsonData = {};
+        formData.forEach(function(value, key){
+            jsonData[key] = value;
+        });
+        
+        // Print JSON data (for demonstration)
+        console.log(jsonData);
+        
+        // You can send this JSON data to your server using AJAX or fetch to process the donation
+        // For this example, we'll just log it to the console
+        console.log("Book donated successfully!");
+        
+        // You can also show a confirmation message to the user
+        alert("Thank you for donating your book!");
+        
+        // Clear the form
+        this.reset();
+    });
+</script>
+
+</body>
+</html>

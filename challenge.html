@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The #24 Challenge</title>
+    <body>
+        <div class="top-panel"></div>
+        <img class="logo" src="C:\Users\Admin\Documents\Career\The Groovy Library\Sample\Landing Page\images\groovy_library__1__removebg_preview__1__1.png" alt="Logo">
+        <div  class="module Home"><a href="home.html">Home</a></div>
+        <div  class="module Story"><a href="story.html">Story</a></div>
+        <div  class="module Books"><a href="books.html">Books</a></div>
+        <div  class="module Donate"><a href="donate.html">Donate</a></div>
+        <div  class="module Connect"><a href="connect.html">Connect</a></div>
+        <div  class="module Login"><a href="Sign Up.html">Login</a></div>
+        <img class="icon" src="C:\Users\Admin\Documents\Career\The Groovy Library\Sample\Landing Page\images\user_1077114.png" alt="icon">
+        <div  class="pink"></div>
+        <span  class="Title">The Groovy Library</span>
+        <span  class="para">Step into The Groovy Library, where PDFs pirouette, audiobooks boogie, and reviews rock! Share the love, donate your hardcopies, and let's groove with books! 📚✨</span>
+        <div  class="green"></div>
+        <div  class="module challenge"><a href="challenge.html">The #24 challenge!</a></div>
+      </body>
+      
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .top-panel {
+	box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.085);
+    width: 100%;
+    height: 118px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.logo {
+    position: fixed;
+    top:3px;
+    left: 40px;
+    z-index: 2;
+    width: 90px;
+    height: auto;
+}
+.Home {
+	position:fixed;
+	left:767px;
+	top:40px;
+	font-family:Javanese Text;
+	text-align:left;
+    z-index: 1;
+    padding: 0 10px;
+}
+.Story { 
+	position:fixed;
+	left:905px;
+	top:40px;
+	font-family:Javanese Text;
+	text-align:left;
+    z-index: 2;
+    padding: 0 10px;
+}
+.Books { 
+	position:fixed;
+	left:1003px;
+	top:40px;
+	font-family:Javanese Text;
+	text-align:left;
+    z-index: 3;
+    padding: 0 10px;
+}
+.Donate { 
+	position:fixed;
+	left:1100px;
+	top:40px;
+	font-family:Javanese Text;
+	text-align:left;
+    z-index: 4;
+    padding: 0 10px;
+}
+.Connect { 
+	position:fixed;
+	left:1200px;
+	top:40px;
+	font-family:Javanese Text;
+	text-align:left;
+    z-index: 5;
+    padding: 0 10px;
+}
+.Login { 
+	position:fixed;
+	left:1420px;
+	top:40px;
+	font-family:Javanese Text;
+	text-align:left;
+    z-index: 6;
+    padding: 0 10px;
+}
+.module a {
+    position: fixed;
+    color: black;
+    text-decoration: none;
+    font-size: 23px;
+}
+.Home a {
+    color: rgb(255, 116, 157);
+}
+.Login a {
+    color: rgb(8, 227, 201);
+}
+.module a:hover {
+    color: rgb(8, 227, 201);
+}
+.icon { 
+	width:23px;
+	height:auto;
+	position:fixed;
+	left:1400px;
+	top:50px;
+    z-index: 7;
+}
+body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* White */
+            color: #333;
+            overflow-x: hidden;
+            background-image: url('https://www.transparenttextures.com/patterns/skulls.png');
+        }
+        .container {
+            max-width: 800px;
+            margin: 140px auto;
+            text-align: center;
+            padding: 0 20px;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #ff6f61; /* Pastel red */
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            text-align: justify;
+            padding: 0 20px; /* Added padding for better text alignment */
+        }
+        .highlight {
+            color: #ff6f61; /* Pastel red */
+            font-weight: bold;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #ff6f61; /* Pastel red */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn:hover {
+            background-color: #e64a3d; /* Darker red */
+        }
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #f0d311; /* Yellow */
+            border-radius: 50%;
+            animation: confetti-fall 6s linear infinite;
+            opacity: 0.8;
+        }
+        .confetti:nth-child(2n) {
+            background-color: #ff6f61; /* Pastel red */
+            width: 15px;
+            height: 15px;
+            opacity: 1;
+        }
+        .confetti:nth-child(3n) {
+            background-color: #47e1c8; /* Light blue-green */
+            width: 20px;
+            height: 20px;
+            opacity: 0.6;
+        }
+        @keyframes confetti-fall {
+            0% { transform: translateY(-100vh) rotateZ(0deg); }
+            100% { transform: translateY(100vh) rotateZ(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Welcome to The #24 Challenge</h1>
+    <p>Do you claim to have never judged a book by its cover? Do you claim to read and love all genres equally? Do you claim to finish every book you start? Are you ready to prove it? Join The <span class="highlight">#24 Challenge</span>! Cherish 24 diverse books this year with fellow groovy readers.</p>
+    <a href="#" class="btn">Count me in!!</a>
+</div>
+
+<!-- Confetti -->
+<div class="confetti" style="left: 10%; animation-delay: 1s;"></div>
+<div class="confetti" style="left: 20%; animation-delay: 2s;"></div>
+<div class="confetti" style="left: 30%; animation-delay: 3s;"></div>
+<div class="confetti" style="left: 40%; animation-delay: 4s;"></div>
+<div class="confetti" style="left: 50%; animation-delay: 5s;"></div>
+<div class="confetti" style="left: 60%; animation-delay: 6s;"></div>
+<div class="confetti" style="left: 70%; animation-delay: 7s;"></div>
+<div class="confetti" style="left: 80%; animation-delay: 8s;"></div>
+<div class="confetti" style="left: 90%; animation-delay: 9s;"></div>
+
+</body>
+</html>
